@@ -1,0 +1,219 @@
+/* App.css */
+
+/* Custom background for the entire application */
+.app-container {
+  background-color: #f4f4f9; /* Light gray background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Header with enhanced spacing and bold typography */
+.app-header {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Styles for the Add Subject form */
+.add-subject-form {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+.add-subject-form h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Form fields styling */
+.input-field {
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button styling for the form */
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.add-btn:active {
+  background-color: #388e3c;
+}
+
+/* Subject Card styling */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card .attendance-status {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.card .attendance-status span {
+  font-weight: 600;
+}
+
+/* Attendance percentage color based on condition */
+.card .attendance-status .low {
+  color: #e74c3c; /* Red for low attendance */
+}
+
+.card .attendance-status .high {
+  color: #2ecc71; /* Green for good attendance */
+}
+
+/* Display no subjects added yet message */
+.no-subjects {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #7f8c8d;
+}
+
+
+/* Styling for the Edit Attendance button */
+.edit-btn {
+  background-color: #3498db; /* Blue background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+.edit-btn:active {
+  background-color: #1f618d; /* Even darker blue when clicked */
+  transform: scale(0.98); /* Slightly shrinks the button */
+}
+
+
+
+/* Style for the entire radio button section */
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.radio-group label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Enlarge the radio buttons */
+}
+
+/* Hover effect for radio button labels */
+.radio-group label:hover {
+  background-color: #e1f5fe;
+  color: #3498db;
+  transform: scale(1.05);
+}
+
+/* Checked radio button styles */
+input[type="radio"]:checked + span {
+  color: #3498db;
+  font-weight: bold;
+  border-color: #3498db;
+}
+
+/* Active state for radio button selection */
+input[type="radio"]:checked {
+  accent-color: #3498db; /* Blue checked color */
+}
+
+/* Styling for text instructions */
+.radio-text {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Additional space between radio options */
+.radio-option {
+  margin-right: 15px;
+}
+
+/* Apply Poppins font to the whole document */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
